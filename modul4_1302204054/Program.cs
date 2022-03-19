@@ -12,21 +12,6 @@ namespace com.kpl.jurnal.modul4
         }
     }
 
-    class main
-    {
-        public static void Main()
-        {
-            //nim = 1302204054
-            double nim1 = 13;
-            double nim2 = 02;
-            double nim3 = 20;
-
-            Console.WriteLine(Penjumlahan.JumlahTigaAngka<double>(nim1, nim2, nim3));
-        }
-    }
-}
-namespace com.kpl.jurnal.modul4
-{
     public class SimpleDataBase<T>
     {
         private List<T> StoredData;
@@ -64,11 +49,14 @@ namespace com.kpl.jurnal.modul4
     {
         public static void Main()
         {
-            SimpleDataBase<double> simpleData = new SimpleDataBase<double>();
             //nim = 1302204054
             double nim1 = 13;
             double nim2 = 02;
             double nim3 = 20;
+
+            Console.WriteLine(Penjumlahan.JumlahTigaAngka<double>(nim1, nim2, nim3));
+
+            SimpleDataBase<double> simpleData = new SimpleDataBase<double>();
 
             simpleData.AddNewData(nim1);
             simpleData.AddNewData(nim2);
